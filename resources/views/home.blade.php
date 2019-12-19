@@ -9,23 +9,30 @@
 @endcan
 
 
+
+<!--
 <div class="row">
     <div class="col-md-6 col-lg-3 add_new_members">
-      <div> 
-                      <button class="btn btn-transparent dropdown-toggle p-0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <div class="float-right "> 
+                      <button class="btn btn-transparent float-right dropdown-toggle p-0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="icon-settings"></i>
                     </button>
+                    <div class="dropdown-menu  dropdown-menu-right">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
       </div>
 
       <div>  <button class="btn btn-block btn-primary" type="button">Créer un nouveau membre</button>
       </div>
     </div>
 </div>  
-
+-->
 
 <div class="row">
               <div class="col-sm-6 col-lg-3">
-                <div class="card text-white bg-primary members_paye">
+                <div class="card text-white bg-primary box-chadaw skew">
                 
                   <div class="card-body pb-0 ">
                     <div class="btn-group float-right">
@@ -48,7 +55,7 @@
               </div>
               <!-- /.col-->
               <div class="col-sm-6 col-lg-3">
-                <div class="card text-white bg-info members_paye">
+                <div class="card text-white bg-info box-chadaw skew ">
                   <div class="card-body pb-0">
                     <button class="btn btn-transparent p-0 float-right " type="button">
                       <i class="icon-location-pin"></i>
@@ -63,7 +70,7 @@
               </div>
               <!-- /.col-->
               <div class="col-sm-6 col-lg-3">
-                <div class="card text-white bg-warning members_paye">
+                <div class="card text-white bg-warning box-chadaw skew ">
                   <div class="card-body pb-0">
                     <div class="btn-group float-right">
                       <button class="btn btn-transparent dropdown-toggle p-0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -85,7 +92,7 @@
               </div>
               <!-- /.col-->
               <div class="col-sm-6 col-lg-3">
-                <div class="card text-white bg-danger members_paye">
+                <div class="card text-white bg-danger box-chadaw skew ">
                   <div class="card-body pb-0">
                     <div class="btn-group float-right">
                       <button class="btn btn-transparent dropdown-toggle p-0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -109,67 +116,174 @@
             </div>
 
 
+
+
+            
+
+
             <div class="row">
 
-            <div class="col-lg-6">
-<div class="card">
-<div class="card-header"> Simple Table</div>
-<div class="card-body">
-<table class="table table-responsive-sm">
-<thead>
-<tr>
-<th>Username</th>
-<th>Date registered</th>
-<th>Role</th>
-<th>Status</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Samppa Nori</td>
-<td>2012/01/01</td>
-<td>Member</td>
-<td><span class="badge badge-success">Active</span></td>
-</tr>
-<tr>
-<td>Estavan Lykos</td>
-<td>2012/02/01</td>
-<td>Staff</td>
-<td><span class="badge badge-danger">Banned</span></td>
-</tr>
-<tr>
-<td>Chetan Mohamed</td>
-<td>2012/02/01</td>
-<td>Admin</td>
-<td><span class="badge badge-secondary">Inactive</span></td>
-</tr>
-<tr>
-<td>Derick Maximinus</td>
-<td>2012/03/01</td>
-<td>Member</td>
-<td><span class="badge badge-warning">Pending</span></td>
-</tr>
-<tr>
-<td>Friderik Dávid</td>
-<td>2012/01/21</td>
-<td>Staff</td>
-<td><span class="badge badge-success">Active</span></td>
-</tr>
-</tbody>
-</table>
-<ul class="pagination">
-<li class="page-item"><a class="page-link" href="#">Prev</a></li>
-<li class="page-item active"><a class="page-link" href="#">1</a></li>
-<li class="page-item"><a class="page-link" href="#">2</a></li>
-<li class="page-item"><a class="page-link" href="#">3</a></li>
-<li class="page-item"><a class="page-link" href="#">4</a></li>
-<li class="page-item"><a class="page-link" href="#">Next</a></li>
-</ul>
-</div>
-</div>
-</div>
+            
+        <div class="col-lg-6 ">
+          <div class="card box-chadaw ">
+          <div class="card-header"> <h3>les Derniers Abonnements</h3> </div>
+          <div class="card-body">
+          <table class="table table-responsive-sm">
+          <thead>
+            <tr>
+            <th>Username</th>
+            <th>Date registered</th>
+            <th>Role</th>
+            <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+            <td>Samppa Nori</td>
+            <td>2012/01/01</td>
+            <td>Member</td>
+            <td><span class="badge badge-success">Active</span></td>
+            </tr>
+            <tr>
+            <td>Estavan Lykos</td>
+            <td>2012/02/01</td>
+            <td>Staff</td>
+            <td><span class="badge badge-danger">Banned</span></td>
+            </tr>
+            <tr>
+            <td>Chetan Mohamed</td>
+            <td>2012/02/01</td>
+            <td>Admin</td>
+            <td><span class="badge badge-secondary">Inactive</span></td>
+            </tr>
+            <tr>
+            <td>Derick Maximinus</td>
+            <td>2012/03/01</td>
+            <td>Member</td>
+            <td><span class="badge badge-warning">Pending</span></td>
+            </tr>
+            <tr>
+            <td>Friderik Dávid</td>
+            <td>2012/01/21</td>
+            <td>Staff</td>
+            <td><span class="badge badge-success">Active</span></td>
+            </tr>
+          </tbody>
+          </table>
+            <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+          </div>
+          </div>
+          </div>
               <!-- /.col-->
+
+
+
+            <div class="col-lg-6 ">
+              <div class="card box-chadaw ">
+                <div class="card-header headers"><strong> Abonnements expirés!</strong></div>
+                <div class="card-body pad">
+                <div class="row align-items-center pad-4">
+                <span class="badge badge-danger attente-de-paiement">Anass haddaoui</span>
+                <span class="badge badge-danger attente-de-paiement">mohamed haddaoui</span>
+                <span class="badge badge-danger attente-de-paiement">salma haddaoui</span>
+                <span class="badge badge-danger attente-de-paiement">moussa bensaadat</span>
+                <span class="badge badge-danger attente-de-paiement">khadijabensaadat</span>
+                <span class="badge badge-danger attente-de-paiement">Anass haddaoui</span>
+                <span class="badge badge-danger attente-de-paiement">mohamed haddaoui</span>
+                <span class="badge badge-danger attente-de-paiement">salma haddaoui</span>
+                <span class="badge badge-danger attente-de-paiement">moussa bensaadat</span>
+                </div>
+                </div>
+              </div>
+
+              <div class="card box-chadaw ">
+                <div class="card-header headers"><strong>En attente de paiement</strong></div>
+                <div class="card-body pad">
+                <div class="row align-items-center pad-4">
+                <span class="badge badge-warning attente-de-paiement">Anass haddaoui</span>
+                <span class="badge badge-warning attente-de-paiement">mohamed haddaoui</span>
+                <span class="badge badge-warning attente-de-paiement">salma haddaoui</span>
+                <span class="badge badge-warning attente-de-paiement">moussa bensaadat</span>
+                <span class="badge badge-warning attente-de-paiement">khadijabensaadat</span>
+                <span class="badge badge-warning attente-de-paiement">Anass haddaoui</span>
+                <span class="badge badge-warning attente-de-paiement">mohamed haddaoui</span>
+                <span class="badge badge-warning attente-de-paiement">salma haddaoui</span>
+                <span class="badge badge-warning attente-de-paiement">moussa bensaadat</span>
+                </div>
+                </div>
+              </div>
+
+              <div class="card box-chadaw ">
+                <div class="card-header headers"><strong> Echéance</strong></div>
+                <div class="card-body pad">
+                <div class="row align-items-center pad-4">
+                <span class="badge badge-info attente-de-paiement">Anass haddaoui</span>
+                <span class="badge badge-info attente-de-paiement">mohamed haddaoui</span>
+                <span class="badge badge-info attente-de-paiement">salma haddaoui</span>
+                <span class="badge badge-info attente-de-paiement">moussa bensaadat</span>
+                <span class="badge badge-info attente-de-paiement">khadijabensaadat</span>
+                <span class="badge badge-info attente-de-paiement">Anass haddaoui</span>
+                <span class="badge badge-info attente-de-paiement">mohamed haddaoui</span>
+                <span class="badge badge-info attente-de-paiement">salma haddaoui</span>
+                <span class="badge badge-info attente-de-paiement">moussa bensaadat</span>
+                </div>
+                </div>
+              </div>
             </div>
+
+    <div class="row col-md-12 ">
+      <div class="container-fluid col-lg-6 col-md-12 ">
+        <div class="card box-chadaw ">
+
+              <!-- multistep form -->
+        <form id="msform">
+          <!-- progressbar -->
+          <ul id="progressbar">
+            <li class="active">Account Setup</li>
+            <li>Social Profiles</li>
+            <li>Personal Details</li>
+          </ul>
+          <!-- fieldsets -->
+          <fieldset>
+            <h2 class="fs-title">Create your account</h2>
+            <h3 class="fs-subtitle">This is step 1</h3>
+            <input type="text" name="email" placeholder="Email" />
+            <input type="password" name="pass" placeholder="Password" />
+            <input type="password" name="cpass" placeholder="Confirm Password" />
+            <input type="button" name="next" class="next action-button" value="Next" />
+          </fieldset>
+          <fieldset>
+            <h2 class="fs-title">Social Profiles</h2>
+            <h3 class="fs-subtitle">Your presence on the social network</h3>
+            <input type="text" name="twitter" placeholder="Twitter" />
+            <input type="text" name="facebook" placeholder="Facebook" />
+            <input type="text" name="gplus" placeholder="Google Plus" />
+            <input type="button" name="previous" class="previous action-button" value="Previous" />
+            <input type="button" name="next" class="next action-button" value="Next" />
+          </fieldset>
+          <fieldset>
+            <h2 class="fs-title">Personal Details</h2>
+            <h3 class="fs-subtitle">We will never sell it</h3>
+            <input type="text" name="fname" placeholder="First Name" />
+            <input type="text" name="lname" placeholder="Last Name" />
+            <input type="text" name="phone" placeholder="Phone" />
+            <textarea name="address" placeholder="Address"></textarea>
+            <input type="button" name="previous" class="previous action-button" value="Previous" />
+            <input type="submit" name="submit" class="submit action-button" value="Submit" />
+          </fieldset>
+        </form>
+    </div>
+</div>
+</div>
+
+      
 @section('scripts')
 @parent
 
