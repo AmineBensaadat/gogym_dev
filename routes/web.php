@@ -17,4 +17,6 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], 
     Route::delete('users_mass_destroy', 'Admin\UsersController@massDestroy')->name('users.mass_destroy');
 
     Route::resource('config', 'Admin\ConfigController');
+   
 });
+Route::get('member/profile', 'Admin\MemberController@profile');

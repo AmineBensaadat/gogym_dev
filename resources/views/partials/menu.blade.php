@@ -70,6 +70,15 @@
                     {{ trans('langue') }}
                 </a>
             </li>
+
+            <li class="nav-item">
+                 <a href="http://127.0.0.1:8000/member/profile" class="nav-link {{ request()->is('admin/roles') || request()->is('admin/roles/*') ? 'active' : '' }}">
+                    <i class="nav-icon fas fa-sign-out-alt">
+
+                    </i>
+                    {{ trans('profile') }}
+                </a>
+            </li>
         </ul>
 
     </nav>

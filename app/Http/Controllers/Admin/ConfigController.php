@@ -20,6 +20,16 @@ class ConfigController extends Controller
         return view('admin.configuration.config', compact('roles'));
     }
 
+    public function profile()
+    {
+        abort_unless(\Gate::allows('role_access'), 403);
+
+        $roles = Role::all();
+
+        return view('admin.configuration.profile', compact('roles'));
+    }
+
+
     public function create()
     {
         abort_unless(\Gate::allows('role_create'), 403);

@@ -202,125 +202,123 @@ body {
 }
 
 /* ---------------------------- */
-/* Create your account          */
+/* start profile                */
 /*  --------------------------- */
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
-
-
-/*form styles*/
-#msform {
-	width: 400px;
-	margin: 50px auto;
+/* Profile container */
+.profile {
+	margin: 20px 0;
+  }
+  
+  /* Profile sidebar */
+  .profile-sidebar {
 	text-align: center;
-	position: relative;
+	padding: 20px 0 10px 0;
+	background: rgb(240, 240, 240);
+  }
+.col-md-4 {
+	margin: 0 auto;
 }
-#msform fieldset {
-	background: white;
-	border: 0 none;
-	border-radius: 3px;
-	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
-	padding: 20px 30px;
-	box-sizing: border-box;
-	width: 80%;
-	margin: 0 10%;
-	
-	/*stacking fieldsets above each other*/
-	position: relative;
-}
-/*Hide all except first fieldset*/
-#msform fieldset:not(:first-of-type) {
-	display: none;
-}
-/*inputs*/
-#msform input, #msform textarea {
-	padding: 15px;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	margin-bottom: 10px;
-	width: 100%;
-	box-sizing: border-box;
-	font-family: montserrat;
-	color: #2C3E50;
-	font-size: 13px;
-}
-/*buttons*/
-#msform .action-button {
-	width: 100px;
-	background: #27AE60;
-	font-weight: bold;
-	color: white;
-	border: 0 none;
-	border-radius: 1px;
-	cursor: pointer;
-	padding: 10px 5px;
-	margin: 10px 5px;
-}
-#msform .action-button:hover, #msform .action-button:focus {
-	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
-}
-/*headings*/
-.fs-title {
+  
+  .profile-userpic img {
+	float: none;
+	margin: 0 auto;
+	width: 50%;
+	height: 50%;
+	-webkit-border-radius: 50% !important;
+	-moz-border-radius: 50% !important;
+	border-radius: 50% !important;
+  }
+  
+  .profile-usertitle {
+	text-align: center;
+	margin-top: 10px;
+  }
+  
+  .profile-usertitle-name {
+	color: #000000;
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 7px;
+	text-transform: uppercase;
+  }
+  
+  .profile-usertitle-city {
+
+	color: #000000;
 	font-size: 15px;
+	font-weight: 600;
+	margin-bottom: 15px;
+	background-color: rgb(236, 236, 236);
+	margin: 8px;
+	border: 2px solid rgb(28, 126, 255);
+	border-radius: 10px;
+  }
+  .profile-usertitle-city p,h4 {
+	  margin: 0;
+  }
+  .profile-userbuttons {
+	text-align: center;
+	margin-top: 10px;
+  }
+  
+  .profile-userbuttons .btn {
 	text-transform: uppercase;
-	color: #2C3E50;
-	margin-bottom: 10px;
-}
-.fs-subtitle {
-	font-weight: normal;
-	font-size: 13px;
-	color: #666;
-	margin-bottom: 20px;
-}
-/*progressbar*/
-#progressbar {
-	margin-bottom: 30px;
-	overflow: hidden;
-	/*CSS counters to number the steps*/
-	counter-reset: step;
-}
-#progressbar li {
-	list-style-type: none;
-	color: white;
-	text-transform: uppercase;
-	font-size: 9px;
-	width: 33.33%;
-	float: left;
-	position: relative;
-}
-#progressbar li:before {
-	content: counter(step);
-	counter-increment: step;
-	width: 20px;
-	line-height: 20px;
-	display: block;
-	font-size: 10px;
-	color: #333;
-	background: white;
-	border-radius: 3px;
-	margin: 0 auto 5px auto;
-}
-/*progressbar connectors*/
-#progressbar li:after {
-	content: '';
-	width: 100%;
-	height: 2px;
-	background: white;
-	position: absolute;
-	left: -50%;
-	top: 9px;
-	z-index: -1; /*put it behind the numbers*/
-}
-#progressbar li:first-child:after {
-	/*connector not needed before the first step*/
-	content: none; 
-}
-/*marking active/completed steps green*/
-/*The number of the step and the connector before it = green*/
-#progressbar li.active:before,  #progressbar li.active:after{
-	background: #27AE60;
-	color: white;
-}
+	font-size: 11px;
+	font-weight: 600;
+	padding: 6px 15px;
+	margin-right: 5px;
+  }
+  
+  .profile-userbuttons .btn:last-child {
+	margin-right: 0px;
+  }
+	  
+  .profile-usermenu {
+	margin-top: 10px;
+  }
+  
+  .profile-usermenu ul li {
+	border-bottom: 1px solid #f0f4f7;
+  }
+  
+  .profile-usermenu ul li:last-child {
+	border-bottom: none;
+  }
+  
+  .profile-usermenu ul li a {
+	color: #93a3b5;
+	font-size: 14px;
+	font-weight: 400;
+  }
+  
+  .profile-usermenu ul li a i {
+	margin-right: 8px;
+	font-size: 14px;
+  }
+  
+  .profile-usermenu ul li a:hover {
+	background-color: #fafcfd;
+	color: #5b9bd1;
+  }
+  
+  .profile-usermenu ul li.active {
+	border-bottom: none;
+  }
+  
+  .profile-usermenu ul li.active a {
+	color: #5b9bd1;
+	background-color: #f6f9fb;
+	border-left: 2px solid #5b9bd1;
+	margin-left: -2px;
+  }
+  
+  /* Profile Content */
+  .profile-content {
+	padding: 20px;
+	background: #fff;
+	min-height: 460px;
+  }
 
 /* ---------------------------  */
-/*  end Create your account  ergargazeadfZZEF AZET   */
+/*  end            profile      */
 /*  --------------------------- */
