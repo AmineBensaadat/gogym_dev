@@ -207,19 +207,23 @@ body {
 /* Profile container */
 .profile {
 	margin: 20px 0;
-  }
-  
+}
+.col-md-9,
+.col-md-3 {
+	padding-left: 0;
+}
+.profile-pro {
+	padding: 0;
+}
+
   /* Profile sidebar */
-  .profile-sidebar {
+.profile-sidebar {
 	text-align: center;
 	padding: 20px 0 10px 0;
 	background: rgb(240, 240, 240);
-  }
-.col-md-4 {
-	margin: 0 auto;
 }
-  
-  .profile-userpic img {
+
+.profile-userpic img {
 	float: none;
 	margin: 0 auto;
 	width: 50%;
@@ -227,22 +231,24 @@ body {
 	-webkit-border-radius: 50% !important;
 	-moz-border-radius: 50% !important;
 	border-radius: 50% !important;
-  }
-  
-  .profile-usertitle {
+}
+.profile-usertitle {
 	text-align: center;
 	margin-top: 10px;
-  }
-  
-  .profile-usertitle-name {
+}
+.profile-usertitle p {
+	color: rgb(65, 65, 65);
+}
+.profile-usertitle-name {
 	color: #000000;
-	font-size: 25px;
-	font-weight: 600;
+	font-size: auto ;
+	font-weight: 700;
 	margin-bottom: 7px;
 	text-transform: uppercase;
-  }
-  
-  .profile-usertitle-city {
+	max-height: 40px;
+	overflow: hidden;
+}
+.profile-usertitle-city {
 
 	color: #000000;
 	font-size: 15px;
@@ -252,73 +258,80 @@ body {
 	margin: 8px;
 	border: 2px solid rgb(28, 126, 255);
 	border-radius: 10px;
-  }
-  .profile-usertitle-city p,h4 {
-	  margin: 0;
-  }
-  .profile-userbuttons {
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.472)
+	}
+.profile-usertitle-city p,h4 {
+	margin: 0;
+}
+.profile-userbuttons {
 	text-align: center;
 	margin-top: 10px;
-  }
-  
-  .profile-userbuttons .btn {
+}
+
+.profile-userbuttons .btn {
 	text-transform: uppercase;
 	font-size: 11px;
 	font-weight: 600;
 	padding: 6px 15px;
 	margin-right: 5px;
-  }
-  
-  .profile-userbuttons .btn:last-child {
+	box-shadow: 0 4px 6px 0 rgba(19, 8, 8, 0.472)
+
+}
+
+.profile-userbuttons .btn:last-child {
 	margin-right: 0px;
-  }
-	  
-  .profile-usermenu {
+}
+.profile-usermenu {
 	margin-top: 10px;
-  }
-  
-  .profile-usermenu ul li {
+}
+
+.profile-usermenu ul li {
 	border-bottom: 1px solid #f0f4f7;
-  }
-  
-  .profile-usermenu ul li:last-child {
-	border-bottom: none;
-  }
-  
-  .profile-usermenu ul li a {
+}
+
+.profile-usermenu ul li:last-child {
+	border-bottom: none;}
+.profile-usermenu ul li a {
 	color: #93a3b5;
 	font-size: 14px;
 	font-weight: 400;
-  }
-  
-  .profile-usermenu ul li a i {
+}
+
+.profile-usermenu ul li a i {
 	margin-right: 8px;
 	font-size: 14px;
-  }
-  
-  .profile-usermenu ul li a:hover {
+}
+
+.profile-usermenu ul li a:hover {
 	background-color: #fafcfd;
 	color: #5b9bd1;
-  }
-  
-  .profile-usermenu ul li.active {
+}
+.profile-usermenu ul li.active {
 	border-bottom: none;
-  }
-  
-  .profile-usermenu ul li.active a {
+}
+.profile-usermenu ul li.active a {
 	color: #5b9bd1;
 	background-color: #f6f9fb;
 	border-left: 2px solid #5b9bd1;
 	margin-left: -2px;
-  }
-  
+}
+
   /* Profile Content */
-  .profile-content {
+.profile-content {
 	padding: 20px;
 	background: #fff;
 	min-height: 460px;
-  }
+}
 
 /* ---------------------------  */
 /*  end            profile      */
+/*  --------------------------- */
+
+/* ---------------------------  */
+/*  start    tab profile        */
+/*  --------------------------- */
+
+
+/* ---------------------------  */
+/*  end    tab profile        */
 /*  --------------------------- */

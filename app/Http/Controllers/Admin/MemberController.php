@@ -41,6 +41,19 @@ class MemberController extends Controller
         return view('admin.members.profile', compact('users'));
     }
 
+
+    public function members()
+    {
+      
+        if (! Gate::allows('users_manage')) {
+            return abort(401);
+        }
+
+        $users = User::all();
+
+        return view('admin.members.members', compact('users'));
+    }
+
     /**
      * Show the form for creating new User.
      *
