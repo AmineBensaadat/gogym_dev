@@ -20,4 +20,5 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], 
    
 });
 Route::get('member/profile', 'Admin\MemberController@profile');
-Route::get('members', 'Admin\MemberController@members');
+Route::get('member/add', 'Admin\MemberController@create');
+Route::post('member/store', 'Admin\MemberController@store');

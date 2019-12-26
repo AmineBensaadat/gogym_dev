@@ -51,7 +51,7 @@ class MemberController extends Controller
 
         $users = User::all();
 
-        return view('admin.members.members', compact('users'));
+        return view('admin.members.create', compact('users'));
     }
 
     /**
@@ -66,7 +66,7 @@ class MemberController extends Controller
         }
         $roles = Role::get()->pluck('name', 'name');
 
-        return view('admin.users.create', compact('roles'));
+        return view('admin.members.create', compact('roles'));
     }
 
     /**
